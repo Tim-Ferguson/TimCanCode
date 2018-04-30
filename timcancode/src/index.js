@@ -64,7 +64,7 @@ class Resume extends React.Component {
       <div className="Resume">
         <h1>{this.state.Resume.Name}</h1>
         <h4>Contact</h4>
-        <span> Email : <a href="mailto:{this.state.Resume.Contact.Email}?Subject=Tim,%20Can%20I%20Hire%20You">{this.state.Resume.Contact.Email} </a></span> | <span>LinkedIn : <a href="{this.state.Resume.Contact.LinkedIn}">{this.state.Resume.Contact.LinkedIn}</a></span> | <span> Website : <a href='{this.state.Resume.Contact["Personal Site"]}'>{this.state.Resume.Contact["Personal Site"]} </a></span>
+        <span> Email : <a href={"mailto:" + this.state.Resume.Contact.Email + "?Subject=Tim,%20Can%20I%20Hire%20You"} >{this.state.Resume.Contact.Email} </a></span> | <span>LinkedIn : <a href="{this.state.Resume.Contact.LinkedIn}">{this.state.Resume.Contact.LinkedIn}</a></span> | <span> Website : <a href='{this.state.Resume.Contact["Personal Site"]}'>{this.state.Resume.Contact["Personal Site"]} </a></span>
         <h4>Skills</h4>
         <ul>
           {this.state.Resume.Skills.map((item, index) =>
